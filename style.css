@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    letter-spacing: .025rem;
+    background-image: linear-gradient(to right, #e9defa 0%, #fbfcdb 100%);
+    
+        /* Variables */
+        --mint-green: #55efc4;
+        --purple: #6c5ce7;
+        --radius: 25px;
+}
+
+/* Business Card */
+.business-card {
+    margin: 44px auto;
+    width: 75%;
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.business-card div {
+    margin: 0;
+}
+
+/* Rounded corners on containers */
+.rounded-top {
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+    /* Image div */
+    .img-container {
+        overflow: hidden;
+        height: 300px;
+    }
+    
+    .profile-picture {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    /* Profile div */
+    .profile {
+        padding: 0 40px;
+    }
+    
+    .profile div {
+        margin: 40px 0;
+    }
+    
+    .profile button {
+        width: 100%;
+        border: none;
+        border-radius: 15px;
+        height: 35px;
+    }
+    
+    button:hover {
+    background-color: var(--mint-green);
+    }
+
+    .name a {
+        color: #636e72;
+    }
+
+    .name a:hover {
+        color: var(--mint-green);
+    }
+    
+    /* Socials div */
+    .socials {
+        height: 60px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .fa {
+        color: white;
+        text-decoration: none;
+    }
+
+    .fa:hover {
+        color: var(--mint-green);
+    }
+    
+/* Text Styles */
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.text-semi-bold {
+    font-weight: 600;
+}
+
+.text-regular {
+    font-weight: 400;
+}
+
+.text-lg {
+    font-size: 30px;
+}
+
+.text-md {
+    font-size: 18px;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-white {
+    color: white;
+}
+
+/* Colors */
+.bg-white {
+    background-color: white;
+}
+
+.text-purple {
+    color: var(--purple);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+/* Spacing Styles */
+.spacing-small {
+    padding: 0;
+    margin: 10px 0;
+}
+
+.negative-margin-top {
+    margin-top: -15px;
+}
+
+.extra-margin-bottom {
+    margin-bottom: 70px;
+}
+
+/* Animations */
+.zoom {
+    transition: transform .15s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
